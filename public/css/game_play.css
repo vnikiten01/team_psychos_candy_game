@@ -1,0 +1,37 @@
+#game_background {
+  /*width: 100em;*/
+  /*height: 100em;*/
+  /*border: 1px solid #000;*/
+  background: url("../imgs/Halloween-Background.jpg") no-repeat center center fixed;
+  /*background-image: url("../imgs/Halloween-Background.jpg");
+  background-repeat: no-repeat;*/
+  background-size: cover;
+  margin: auto;
+}
+
+/*#game_layout{
+  width: 10em;
+  height: 10em;
+  background-color: transparent;
+  margin: auto;
+}*/
+
+.candy{
+  position: absolute;
+  /*background-color: yellow;*/
+  /*background-image: url("../imgs/test_candy.jpg");*/
+  /*background-repeat: no-repeat;*/
+  height: auto;
+  width: 25em;
+  left: 40%;
+  top: 40%;
+}
+
+/*.ninja {
+  position: relative;
+  background-image: url("../img/ninja.gif");
+  background-repeat: no-repeat;
+  height: 17;
+  width: 17;
+}
+*/
