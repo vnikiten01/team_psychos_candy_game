@@ -5,9 +5,8 @@ function Candy(){
   // this.y = 30;
   this.initDisplay();
 }
-
 Candy.prototype.initDisplay = function() {
-  var candyTemplate = "<img class='candy' src='../imgs/test_candy.jpg' >"
+  var candyTemplate = "<img class='candy' src='../imgs/#{cadiestest_candy.jpg' >"
   // <img src="./imgs/test_candy.jpg" alt="Mountain View" style="width:30%;height:auto">
   $('body').append(candyTemplate)
 }
@@ -20,7 +19,6 @@ function Game() {
 
 $(document).ready(function() {
   game = new Game();
-
 })
 
 
