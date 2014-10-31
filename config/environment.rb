@@ -17,6 +17,8 @@ require 'logger'
 
 require 'sinatra'
 require "sinatra/reloader" if development?
+enable :sessions
+set :session_secret, ENV['SESSION_SECRET'] || 'This is a secret'
 
 require 'erb'
 
