@@ -5,7 +5,7 @@ get '/' do
   erb :signed_in_index
   end
 end
-# fewrefrgw?
+
 get '/login' do
   erb :login
 
