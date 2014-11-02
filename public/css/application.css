@@ -50,3 +50,22 @@ button#front_buttons{
   margin: -100px -50px 0 0;
 }
 
+
+body.game_body {
+        background: url('../imgs/lab.jpg') no-repeat center center fixed;
+        background-size: cover;
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+        line-height: 800%;
+        font-size: 200%;
+        margin-left: 10%;
+        border-radius: 5px;
+    }
+
+.candy {
+          border-radius: 100px;
+
+}
+
+
