@@ -2,7 +2,8 @@ get '/' do
  if session[:user_id] == nil
   erb :index
  else
-  erb :signed_in_index
+  # erb :signed_in_index
+  redirect to("/swap2.html")
   end
 end
 
@@ -12,7 +13,7 @@ get '/login' do
 end
 
 post '/login' do
-  user = User.find_by(username: params[:username])
+  user = User.find_by(username: params[:username]).try(:authenticate, params[:password])
 
   if user
     session[:user_id] = user.id

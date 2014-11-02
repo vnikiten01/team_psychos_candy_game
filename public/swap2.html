@@ -16,23 +16,23 @@
 		}
 	}
 
-	var ic1 = new ImageCollection(['kit_kat_test.png','kit_kat_full.png', 'KitKatAnswer.png']);
-	var ic2 = new ImageCollection(['payday_test.png','payday_full.png', 'PayDayAnswer.jpg']);
-	var ic3 = new ImageCollection(['Almond_joy_test.png','Almond_joy_full.png', 'AlmondJoyAnswer.jpg']);
-	var ic4 = new ImageCollection(['candy_corn_test.png','Candy_Corn_full.png', 'CandyCornAnswer.jpg']);
-	var ic5 = new ImageCollection(['kisses_test.png','kisses_full.png', 'KissesAnswer.jpg']);
-	// var ic6 = new ImageCollection(['Musketeer_test.png','Musketeer_full.png']);	
-	var ic7 = new ImageCollection(['skittles_temp.png','skittles_full.png', 'SkittlesAnswer.jpg']);	
+	var ic1 = new ImageCollection(['imgs/kit_kat_test.png'   ,'imgs/kit_kat_full.png'    , 'imgs/KitKatAnswer.png']);
+	var ic2 = new ImageCollection(['imgs/payday_test.png'    ,'imgs/payday_full.png'     , 'imgs/PayDayAnswer.jpg']);
+	var ic3 = new ImageCollection(['imgs/Almond_joy_test.png','imgs/Almond_joy_full.png' , 'imgs/AlmondJoyAnswer.jpg']);
+	var ic4 = new ImageCollection(['imgs/candy_corn_test.png','imgs/Candy_Corn_full.png' , 'imgs/CandyCornAnswer.jpg']);
+	var ic5 = new ImageCollection(['imgs/kisses_test.png'    ,'imgs/kisses_full.png'     , 'imgs/KissesAnswer.jpg']);
+	// var ic6 = new ImageCollectionimgs/(['Musketeer_test.png'imgs/,'Musketeer_full.png']);imgs/
+	var ic7 = new ImageCollection(['imgs/skittles_temp.png'  ,'imgs/skittles_full.png'   , 'imgs/SkittlesAnswer.jpg']);
 
 
 </script>
 
 <style>
 
-body {
-        background: url('lab.jpg') no-repeat center center fixed;
+body.game_body {
+        background: url('../imgs/lab.jpg') no-repeat center center fixed;
         background-size: cover;
-        -webkit-user-select: none; /* Chrome/Safari */        
+        -webkit-user-select: none; /* Chrome/Safari */
 				-moz-user-select: none; /* Firefox */
 				-ms-user-select: none; /* IE10+ */
 				line-height: 800%;
@@ -51,28 +51,26 @@ body {
 
 </head>
 
-<body>
+<body class= "game_body">
 	<div>
 		<h1>Guess the Candy!</h1>
 		<h2>(scroll down...)</h2>
 		<br>
-		<img class="candy" src='kit_kat_test.png' onclick="ic1.next(this)" width="300px" hspace="30">
+		<img class="candy" src='imgs/kit_kat_test.png' onclick="ic1.next(this)" width="300px" hspace="30">
 
+		<img class="candy" src='imgs/payday_test.png' onclick="ic2.next(this)" width="300px" hspace="30">
 
-		<img class="candy" src='payday_test.png' onclick="ic2.next(this)" width="300px" hspace="30">
-
-
-		<img class="candy" src='Almond_joy_test.png' onclick="ic3.next(this)" width="300px" hspace="30">
-
-		<img class="candy" src='kisses_test.png' onclick="ic5.next(this)" width="300px" hspace="30">
-
-<!-- 		<img src='Musketeer_test.png' onclick="ic6.next(this)" height="250px"> -->
-
-		<img class="candy" src='skittles_temp.png' onclick="ic7.next(this)" width="300px" hspace="30"	>
-
-		<img class="candy" src='candy_corn_test.png' onclick="ic4.next(this)" width="300px" hspace="30">
+		<img class="candy" src='imgs/Almond_joy_test.png' onclick="ic3.next(this)" width="300px" hspace="30"><br>
+		<img class="candy" src='imgs/kisses_test.png' onclick="ic5.next(this)" width="300px" hspace="30">
+<!-- 		<img src='Musketeer_imgs/test.png' onclick="ic6.next(this)" height="250px"> -->
+		<img class="candy" src='imgs/skittles_temp.png' onclick="ic7.next(this)" width="300px" hspace="30"	>
+		<img class="candy" src='imgs/candy_corn_test.png' onclick="ic4.next(this)" width="300px" hspace="30">
 
 	</div>
+	<div id="log_out button">
+  <button type="button"><a href="/logout">Log Out!</a></button>
+</div>
+
 </body>
 
 </html>
