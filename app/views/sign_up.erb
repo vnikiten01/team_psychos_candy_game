@@ -1,10 +1,22 @@
-<form action="/signup" method="POST">
-  Sign Up:<br>
-  <input name ="user[username]" type = "text" placeholder = "Choose a username">
-  <br> Email: <br>
-  <input name ="user[email]" type = "text" placeholder = "Enter email">
-  <br> Password: <br>
-  <input name ="user[password]" type = "password" placeholder = "Choose a password">
-  <input name ="user[password_confirmation]" type = "password" placeholder = "Please confirm password">
-  <input type="submit">
-</form>
+<img src = "imgs/signup_bg.png" id="signupbg">
+<div class="wrap">
+  <div class="avatar">
+      <img src="imgs/willywonka.png">
+    </div>
+  <form action="/signup" method="POST" id="login_form">
+    <input name ="user[username]" type = "text" placeholder = "Choose a username">
+    <br>
+    <div class="bar">
+      <i></i>
+    </div>
+    <br>
+    <input name ="user[email]" type = "text" placeholder = "Enter email">
+    <br>
+    <input name ="user[password]" type = "password" placeholder = "Choose a password">
+    <br>
+    <input name ="user[password_confirmation]" type = "password" placeholder = "Please confirm password">
+    <br>
+    <button>Sign Up</button>
+    <!-- <br><button input type="submit"></button><br> -->
+  </form>
+</div>
