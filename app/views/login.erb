@@ -1,7 +1,19 @@
-<form action="/login" method="POST">
-  Login: <br>
-  <input name ="user[username]" type = "text" placeholder = "Enter username">
-  <br> Password: <br>
-  <input name ="user[password]" type = "text" placeholder = "Enter password">
-  <br><input type="submit"><br>
-</form>
+<img src = "imgs/login_bg.png" id="loginbg">
+
+<div class="wrap">
+  <div class="avatar">
+      <img src="imgs/oompa_loompa.png">
+    </div>
+  <form action="/login" method="POST" id="login_form">
+    <input name ="user[username]" type = "text" placeholder = "Enter username">
+    <br>
+    <div class="bar">
+      <i></i>
+    </div>
+    <br>
+    <input name ="user[password]" type = "password" placeholder = "Enter password">
+    <br>
+    <button>Sign in</button>
+    <!-- <br><button input type="submit"></button><br> -->
+  </form>
+</div>

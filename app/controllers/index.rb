@@ -6,8 +6,6 @@ get '/' do
   end
 end
 
-<<<<<<< HEAD
-=======
 get '/login' do
   erb :login
 
@@ -54,4 +52,3 @@ end
 
 
 
->>>>>>> team_sinatra
